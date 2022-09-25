@@ -41,6 +41,7 @@ header{
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-sizing: border-box;
 }
 div.body{
     margin-top: 150px;
@@ -63,9 +64,10 @@ ul.menu-icon{
     background-color: var(--secondary-background-color);
     justify-content: flex-end;
     align-items: center;
-    padding-block: 2em;
+    padding: 2em;
     z-index: 1000;
     box-shadow: 0 -14px 30px #535353;
+    box-sizing: border-box;
 }
 i.fa-sharp, i.fa-solid{
     font-size: 2em;
@@ -83,7 +85,7 @@ button.theme-icon, .menu-icon{
 
 button.theme-icon{
     padding: .5em;
-    margin-right: 1em;
+    margin-right: 0em;
 }
 
 button.theme-icon:hover .fa-solid{
@@ -92,7 +94,7 @@ button.theme-icon:hover .fa-solid{
 
 
 .menu-icon{
-    margin-right: 2em;
+    margin-left: 1em;
 }
 i.fa-xmark{
     display: none;
@@ -230,7 +232,7 @@ button.socials{
 
 
     to{
-        bottom: initial;
+        bottom: 50%;
     }
 }
 .social-icon{
@@ -346,7 +348,7 @@ div.skill-tile h3{
 /*Project Section */
 
 div.projects-container-all{
-    margin: var(--margin)auto;
+    margin: var(--margin) auto;
     width: 80%;
     height: 110em;
     background-color: var(--secondary-background-color);
@@ -658,9 +660,9 @@ input.contact:-webkit-autofill:focus,
 input.contact:-webkit-autofill:hover{
     -webkit-box-shadow: 0 0 0 30px inset var(--primary-background-color);
     -webkit-text-fill-color: var(--secondary-color);
-    -webkit-animation-name: autofill;
+    /*-webkit-animation-name: autofill;
     -webkit-animation-delay: 4s;
-    -webkit-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;*/
 }
 
 
