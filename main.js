@@ -41,6 +41,10 @@ themeToggleBtn.addEventListener('click', function () {
 
 //update last modified p tag
 
-var lastModified = document.lastModified;
+var lastModifiedDate = document.lastModified;
+
+var dateModified = new Date(lastModifiedDate);
+
+var lastModified = dateModified.toDateString();
 var lastModifiedObj = document.getElementById('last-modified');
-lastModifiedObj.textContent = 'Last Modified: ' + lastModified;
+lastModifiedObj.textContent = 'Last Updated: ' + lastModified;

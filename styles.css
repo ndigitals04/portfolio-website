@@ -756,14 +756,37 @@ a.arrow-up:visited{
     padding: 1em;
     position: absolute;
     bottom: 0;
+    box-sizing: border-box;
+    gap: .5em;
 }
 
 .footer a{
     color: var(--secondary-color);
 }
 
+.footer p{
+    min-width: 150px;
+}
+
+button.contact{
+    display: flex;
+    background-color: transparent;    
+    border: 0;
+    gap: .5em;
+}
+
+button.contact .social-icon{
+    font-size: 1em;
+}
+
 /*Media Queries */
-@media  screen and (min-width: 768px) {
+@media  screen and (min-width: 768px) { 
+    button.menu-icon{
+        display: none;
+    }
+
+
+
     ul.menu{
         z-index: 1100;
         display: flex;
@@ -864,10 +887,7 @@ a.arrow-up:visited{
 
 @media  screen and (min-width:1024px) {
 
-    button.menu-icon{
-        display: none;
-    }
-
+   
     div.project-container{
         width: 300px;
         height:450px;
